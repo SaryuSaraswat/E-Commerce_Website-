@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <title>Fashionista</title>
+  <style>
+    .search-result {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <br>
+
+  <div class="container mt-3">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="dropdown me-2">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false" style="background-color: aliceblue; color:black; border-color:aliceblue">
+          All Categories
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Men</a></li>
+          <li><a class="dropdown-item" href="#">Women</a></li>
+        </ul>
+      </div>
+      <input class="form-control me-2" type="text" placeholder="What do you need?" name="" id="myInput" onkeyup="searchFun()" style="width: 40%;">
+      <div class="d-flex">
+        <button class="btn btn-primary me-2" type="button">Login</button>
+        <button class="btn btn-warning" type="button">Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav" style="padding-left: 35%;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SHOP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">COLLECTION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <br>
+
+  <div class="table">
+    <div class="table1">
+      <h1 style="color: blueviolet; font-family: serif italic; text-align: center">FASHIONISTA</h1>
+      <pre>
+        Elevate your style with our latest collection - 
+        where fashion meets comfort. Discover trends that set you apart, crafted 
+        for every occasion. Shop now and transform your wardrobe 
+        with chic, timeless pieces. Embrace the essence of fashion, only at 
+        FASHIONISTA." 
+      </pre>
+      <button class="shop">SHOP NOW</button>
+    </div>
+    <div class="table2">
+      <img src="https://t3.ftcdn.net/jpg/04/80/17/30/360_F_480173057_ta65ymgg4ycncrspfXvgoB43DB0ZUy8s.jpg"
+        alt="Fashion Image">
+    </div>
+  </div>
+
+  <div class="Women" style="background-image: url('/image.jpg');">
+    <div class="text-overlay" style="margin-left: 15%; padding-bottom: -10%;">
+      <p style="margin-left: 15%;">NEW ARRIVALS</p>
+      <p style="font-size: 50px;"><b>Summer neutrals</b></p>
+      <button style="text-align: center;">BUY NOW</button>
+    </div>
+  </div>
+
+  <h3>MEN BESTSELLER 🖤</h3>
+  <h3>WOMEN BESTSELLER 🖤</h3>
+  <h3>SPORT</h3>
+  <br>
+
+  <div class="search-result" id="searchResult"></div>
+
+  <table id="myTable" class="table table-bordered">
+    <tr>
+      <td>
+        <img src="https://lp2.hm.com/hmgoepprod?set=source[/23/ba/23ba90d96f03fc9a978bab3ee7f0ce7b47a251fe.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[w],hmver[2]&call=url[file:/product/main]"
+          alt="Regular Jeans">
+        <p style="text-align: center; font-family: monospace;">Regular Jeans</p>
+      </td>
+      <td>
+        <img src="https://lp2.hm.com/hmgoepprod?set=source[/05/04/050447199cf335bd795493f40985dffcdc725972.jpg],origin[dam],category[men_tshirtstanks_printed],type[DESCRIPTIVESTILLLIFE],res[w],hmver[2]&call=url[file:/product/main]"
+          alt="Over-Sized Fit Print T-shirt">
+        <p style="text-align: center; font-family: monospace;">Over-Sized Fit Print T-shirt</p>
+      </td>
+      <td>
+        <img src="https://lp2.hm.com/hmgoepprod?set=source[/3b/98/3b9866665977c9bbda42f3f0048717b3392d0da5.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[w],hmver[2]&call=url[file:/product/main]"
+          alt="Regular Jeans">
+        <p style="text-align: center; font-family: monospace;">Regular Jeans</p>
+      </td>
+      <td>
+        <img src="https://lp2.hm.com/hmgoepprod?set=source[/4c/3f/4c3fdcddba1dbaa06462131d2205be3fb769c925.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[w],hmver[2]&call=url[file:/product/main]"
+          alt="Slim Fit Zip-top polo shirt">
+        <p style="text-align: center; font-family: monospace;">Slim Fit Zip-top polo shirt</p>
+      </td>
+      <td>
+        <img src="https://lp2.hm.com/hmgoepprod?set=source[/c9/46/c946672a50ecf260e1cdaa9ca65d91ee2607c133.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[w],hmver[2]&call=url[file:/product/main]"
+          alt="Slim Fit Zip-top polo shirt">
+        <p style="text-align: center; font-family: monospace;">Slim Fit Zip-top polo shirt</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://lp2.hm.com/hmgoepprod?set=source[/f3/2c/f32c15e6fc88de66b877a2680224efb0bdd73bc3.jpg],origin[dam],category[],type[LOOKBOOK],res[z],hmver[1]&call=url[file:/product/main]"
+          alt="Embroidered strappy top">
+        <p style="text-align: center; font-family: monospace;">Embroidered strappy top</p>
+      </td>
+      <td>
+        <img src="https://lp2.hm.com/hmgoepprod?set=source[/a9/c6/a9c6caf3127f3d0d3dd75cedabb1a681c2f7462f.jpg],origin[dam],category[],type[LOOKBOOK],res[z],hmver[1]&call=url[file:/product/main]"
+          alt="Pull-on-shirts">
+        <p style="text-align: center; font-family: monospace;">Pull-on-shirts</p>
+      </td>
+      <td>
+        <img src="https://lp2.hm.com/hmgoepprod?set=source[/33/15/33153e7ce9c35763bc2e1bbd76d1eac117827066.jpg],origin[dam],category[],type[LOOKBOOK],res[z],hmver[1]&call=url[file:/product/main]"
+          alt="Oversized Fit T-shirt">
+        <p style="text-align: center; font-family: monospace;">Oversized Fit T-shirt</p>
+      </td>
+      <td>
+        <img src="https://lp2.hm.com/hmgoepprod?set=source[/e5/cf/e5cf2514eca808884ccd5546c9f30f5cd4a28d87.jpg],origin[dam],category[],type[LOOKBOOK],res[y],hmver[1]&call=url[file:/product/main]"
+          alt="Linen-blend drawstring shorts">
+        <p style="text-align: center; font-family: monospace;">Linen-blend drawstring shorts</p>
+      </td>
+      <td>
+        <img src="https://lp2.hm.com/hmgoepprod?set=source[/30/c3/30c3f2f75693d8b6f55c405fddc08fca9b53fa18.jpg],origin[dam],category[],type[LOOKBOOK],res[y],hmver[1]&call=url[file:/product/main]"
+          alt="Slim Fit Polo Shirt">
+        <p style="text-align: center; font-family: monospace;">Slim Fit Polo Shirt</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://lp2.hm.com/hmgoepprod?set=source[/12/33/1233723b51a13aa8e9d6d4a577def52f8c731038.jpg],origin[dam],category[],type[LOOKBOOK],res[y],hmver[1]&call=url[file:/product/main]"
+          alt="V-neck dress">
+        <p style="text-align: center; font-family: monospace;">V-neck dress</p>
+      </td>
+      <td>
+        <img src="https://lp2.hm.com/hmgoepprod?set=source[/eb/b4/ebb41636edd90bf09ee9f4a8b870dadae529f2fb.jpg],origin[dam],category[],type[LOOKBOOK],res[y],hmver[1]&call=url[file:/product/main]"
+          alt="Fit Hooded jacket">
+        <p style="text-align: center; font-family: monospace;"> Fit Hooded jacket</p>
+      </td>
+      <td>
+        <img src="https://lp2.hm.com/hmgoepprod?set=source[/e7/db/e7db2c25b12bb3ca0226dd029b205d2b456e498a.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]"
+          alt="Lace-trimmed strappy dress">
+        <p style="text-align: center; font-family: monospace;">Lace-trimmed strappy dress</p>
+      </td>
+      <td>
+        <img src="https://lp2.hm.com/hmgoepprod?set=source[/07/f7/07f7f922946d1fa5a77614c0559f3a06f33c9e5c.jpg],origin[dam],category[],type[LOOKBOOK],res[z],hmver[1]&call=url[file:/product/main]"
+          alt="Halterneck suit waistcoat">
+        <p style="text-align: center; font-family: monospace;">Halterneck suit waistcoat</p>
+      </td>
+      <td>
+        <img src="https://lp2.hm.com/hmgoepprod?set=source[/66/4b/664be2659d75a2ec626efc596fc1932bc1f43963.jpg],origin[dam],category[],type[LOOKBOOK],res[z],hmver[1]&call=url[file:/product/main]"
+          alt="Linen-blend shirt">
+        <p style="text-align: center; font-family: monospace;">Linen-blend shirt</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://lp2.hm.com/hmgoepprod?set=source[/1e/fd/1efde9761a801b6ccf89619f0f648c32712ac89c.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[z],hmver[2]&call=url[file:/product/main]"
+          alt="DryMove Pocket-detail sports leggings">
+        <p style="text-align: center; font-family: monospace;">DryMove Pocket-detail sports leggings</p>
+      </td>
+      <td>
+        <img src="https://lp2.hm.com/hmgoepprod?set=source[/97/08/970872970a743acc1f447e2fb18ffbd688a35268.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[z],hmver[2]&call=url[file:/product/main]"
+          alt="Cap">
+        <p style="text-align: center; font-family: monospace;">Cap</p>
+      </td>
+      <td>
+        <img src="https://lp2.hm.com/hmgoepprod?set=source[/f9/81/f9810c246a83ab5290ea3269ebe54d8ae50be734.jpg],origin[dam],category[sportswear_women_clothing_shortsskirts_biker],type[DESCRIPTIVESTILLLIFE],res[z],hmver[2]&call=url[file:/product/main]"
+          alt="Pocket-detail cycling shorts">
+        <p style="text-align: center; font-family: monospace;">Pocket-detail cycling shorts</p>
+      </td>
+      <td>
+        <img src="https://lp2.hm.com/hmgoepprod?set=source[/a1/95/a1951c0039fb93a26e75077a9464f9097bdd8b14.jpg],origin[dam],category[],type[LOOKBOOK],res[z],hmver[1]&call=url[file:/product/main]"
+          alt="Cropped short top">
+        <p style="text-align: center; font-family: monospace;">Cropped short top</p>
+      </td>
+      <td>
+        <img src="https://lp2.hm.com/hmgoepprod?set=source[/5e/bd/5ebd293db38c9e99aa9f9cac8944ad08816a3d3f.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[z],hmver[2]&call=url[file:/product/main]"
+          alt="Halterneck sports top">
+        <p style="text-align: center; font-family: monospace;">Halterneck sports top</p>
+      </td>
+    </tr>
+  </table>
+
+  <footer>
+    <div class="footer">
+      <ul>
+
+        <li>FASHIONISTA</li>
+        <br>
+        <li>Who We Are</li>
+        <li>Join Our Team</li>
+        <li>Terms & Conditions</li>
+        <li>We Respect Your Privacy</li>
+        <li>Fees & Payments</li>
+        <li>Returns & Refunds</li>
+        <li> PolicyPromotions </li>
+        <li>Terms & Conditions</li>
+      </ul>
+      <ul>
+        <li>Help</li>
+          <br>
+        <li>Track Your Order</li>
+        <li>Frequently Asked Questions</li>
+        <li>Returns</li>
+        <li>Cancellations</li>
+        <li>Payments</li>
+        </li>Customer Care</li>
+        <li>How do I redeem my Coupan</li>
+      </ul>
+      <ul>
+        <li>Shop by</li>
+          <br>
+        <li>Men</li>
+        <li>Women</li>
+        <li>HomeCollections</li>
+        <li>IndieStores</li>
+        <li>New Arrivals</li>
+        <li>Brand Directory</li>
+      </ul>
+      <ul>
+        <li>Follow us</li>
+          <br>
+        <li>Facebook</li>
+        <li>Instagram- AJIOlife</li>
+        <li>Instagram- AJIO LUXE</li>
+        <li>Twitter</li>
+        <li>Pinterest</li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <script>
+    const searchFun = () => {
+      let filter = document.getElementById('myInput').value.toUpperCase();
+      let myTable = document.getElementById('myTable');
+      let tr = myTable.getElementsByTagName('tr');
+      let searchResult = document.getElementById('searchResult');
+      searchResult.innerHTML = "";
+
+      for (let i = 0; i < tr.length; i++) {
+        let tds = tr[i].getElementsByTagName('td');
+
+        for (let j = 0; j < tds.length; j++) {
+          let td = tds[j];
+          if (td) {
+            let textvalue = td.textContent || td.innerHTML;
+            if (textvalue.toUpperCase().indexOf(filter) > -1) {
+              let clone = td.cloneNode(true);
+              searchResult.appendChild(clone);
+              break; 
+            }
+          }
+        }
+      }
+
+      if (searchResult.children.length === 0) {
+        searchResult.innerHTML = "<p>No results found</p>";
+      }
+    }
+  </script>
+</body>
+
+</html>
